@@ -1,0 +1,155 @@
+@import 'variables';
+html body {
+    @media (max-width: $width-md){
+      & {  background: url('../src/Assets/destination/background-destination-mobile.jpg');
+       }
+    }
+    @media  (min-width: 22.25rem) and (max-width: 40rem) {
+      &{  background: url('../src/Assets/destination/background-destination-tablet.jpg') -1px;
+       }
+    }
+    @media (min-width: $width-lg) {
+      &{  background: url('../src/Assets/destination/background-destination-desktop.jpg');
+       }
+       .top-nav{
+        background: #1f232c;
+       }
+      main {
+        grid-template-columns: initial;
+        align-content: initial;
+        .subHeading4{
+          text-align: left;
+          padding-left: 3.5%;
+          font-size: 1.2222rem;
+          align-self: center;
+          margin: 1rem 0;
+        }
+        .destinationSection{
+          display: flex;
+        }
+        .destinationBox{
+           grid-template-columns: 1fr 1fr;
+           grid-template-rows: initial;   
+           .mainPageArticle{
+             border-top: unset;
+             order:2;
+              p {
+                  padding-right: 0;
+                  order: 3;
+                }
+                h1{
+                  order: 2;
+                }
+           }
+        }
+        aside{
+          align-self: auto;
+          order: 1;
+          margin-bottom: -4%;
+        }
+        .destinationNav{
+          order: 1;
+          padding-left: 7%;
+          justify-content: left;
+        }
+        .destinationInfo{
+          padding-left: 7%;
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+        }
+       
+      }
+    }
+}
+.subHeading4{
+    margin: 1.6rem 0;
+    color: $h-color;
+    font-size: $heading5;
+    font-family: barlow;
+    text-align: center;
+    letter-spacing: .2639rem;
+    text-transform: uppercase;
+    span {
+      color: $grey-color;
+    }
+}
+.subHeading5{
+ color: lighten($color: $grey-color, $amount: 10); 
+
+}
+main .mainPageArticle{
+  
+  h1{
+    font-size: clamp(4rem, 9vw, 5.65rem);
+    margin-top: 0.8rem;
+  }
+  p{
+    border-bottom: 1px solid $grey-color;
+    padding: 0;
+    padding-bottom: 1.5rem;
+    margin: 0.8rem 7% 0;
+  }
+  .destinationInfo{
+      order: 4;
+      margin-bottom: 0.6rem;
+      
+     p{
+       border-bottom: none;
+        padding-bottom: 0;
+        font-size: .7778rem;
+        font-family: Barlow;
+        letter-spacing: 2.35px;
+        margin: 0.6rem 0 0.2rem;
+        padding-left: 0;
+     }  
+     h6{
+      font-size: 1.5556rem;
+      margin: 0;
+      color: $h-color;
+     }
+  }
+
+}
+aside {
+  height: initial;
+  width: initial;
+  position: initial;
+  margin:initial;
+  align-self: initial;
+  padding-top: 1rem;
+}
+.destinationBox{
+  display: grid;
+  grid-template-rows: 2fr 3fr;
+  display:none;
+}
+.destinationNav {
+      display: flex;
+      justify-content: center;
+      padding: 0;
+      margin-bottom: 0;
+    a{
+      display: block;
+      list-style: none;
+      margin-right: .5rem;
+      text-decoration: none;
+      color: $text-color;
+      text-transform: uppercase;
+      font-size: .8889rem;
+      letter-spacing: .15rem;
+      }
+     hr {
+      height: 3px;
+      background: rgba(240, 233, 233, 0);
+      width: 75%;
+      border: 0;
+    }
+     .destinationNavActive {
+      color: $h-color;
+      hr{
+        margin-bottom: 0;
+        background: white;
+      }
+     }
+ }
+

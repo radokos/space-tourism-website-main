@@ -1,0 +1,127 @@
+/* 
+colors 
+*/
+/*
+width   
+*/
+/* 
+typography
+*/
+@font-face {
+  font-family: "Barlow";
+  src: url("../src/Assets/Fonts/BarlowCondensed-Regular.ttf"); }
+@font-face {
+  font-family: "Bellefair";
+  src: url("../src/Assets/Fonts/Bellefair-Regular.ttf"); }
+/**
+ * GENERAL
+ */
+html {
+  box-sizing: border-box;
+  font-size: 100%; }
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  font-kerning: auto; }
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle; }
+
+.animationClass {
+  animation-duration: 1s;
+  animation-name: slidein; }
+
+@keyframes slidein {
+  from {
+    opacity: 0;
+    transform: scale(0.75); }
+  to {
+    opacity: 100;
+    transform: scale(1); } }
+@media (max-width: 22.25rem) {
+  html body {
+    background: url("../src/Assets/crew/background-crew-mobile.jpg"); } }
+@media (min-width: 22.25rem) and (max-width: 40rem) {
+  html body {
+    background: url("../src/Assets/crew/background-crew-tablet.jpg") -1px; } }
+@media (min-width: 40rem) {
+  html body {
+    background: url("../src/Assets/crew/background-crew-desktop.jpg"); }
+  html body .top-nav {
+    background: #1f232c; }
+  html body main {
+    grid-template-columns: initial;
+    align-content: initial; }
+    html body main .subHeading4 {
+      text-align: left;
+      padding-left: 3.5%;
+      font-size: 1.2222rem;
+      align-self: center; }
+    html body main .crewSection {
+      display: flex; }
+    html body main .crewBox {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: initial; }
+      html body main .crewBox .mainPageArticle {
+        border-top: unset; }
+    html body main aside {
+      align-self: auto;
+      order: 2;
+      margin-bottom: -4.3%; }
+    html body main .crewNav {
+      order: 4;
+      padding-left: 7%;
+      justify-content: left; } }
+
+.subHeading4 {
+  margin: 1.3rem 0;
+  color: #FFFFFF;
+  font-size: clamp(1.2rem, 4.5vw, 1.5556rem);
+  font-family: barlow;
+  text-align: center;
+  letter-spacing: .2639rem;
+  text-transform: uppercase; }
+  .subHeading4 span {
+    color: #464950; }
+
+.subHeading5 {
+  color: #5e626b; }
+
+main .mainPageArticle {
+  border-top: 1px solid #464950; }
+  main .mainPageArticle h1 {
+    font-size: clamp(1.3rem, 4vw, 8.85rem); }
+
+aside {
+  height: initial;
+  width: initial;
+  position: initial;
+  margin: initial;
+  align-self: initial; }
+
+.crewBox {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  display: none; }
+
+.crewNav {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin-bottom: 0; }
+  .crewNav a {
+    display: block;
+    list-style: none;
+    border-radius: 50%;
+    width: .5556rem;
+    height: .5556rem;
+    background: grey;
+    margin-right: .5rem; }
+  .crewNav .crewNavActive {
+    background: white; }
+
+/*# sourceMappingURL=crew.css.map */

@@ -1,0 +1,185 @@
+/* 
+colors 
+*/
+/*
+width   
+*/
+/* 
+typography
+*/
+@font-face {
+  font-family: "Barlow";
+  src: url("../src/Assets/Fonts/BarlowCondensed-Regular.ttf"); }
+@font-face {
+  font-family: "Bellefair";
+  src: url("../src/Assets/Fonts/Bellefair-Regular.ttf"); }
+/**
+ * GENERAL
+ */
+html {
+  box-sizing: border-box;
+  font-size: 100%; }
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  font-kerning: auto; }
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle; }
+
+.animationClass {
+  animation-duration: 1s;
+  animation-name: slidein; }
+
+@keyframes slidein {
+  from {
+    opacity: 0;
+    transform: scale(0.75); }
+  to {
+    opacity: 100;
+    transform: scale(1); } }
+@media (max-width: 22.25rem) {
+  html body {
+    background: url("../src/Assets/technology/background-technology-mobile.jpg"); } }
+@media (min-width: 22.25rem) and (max-width: 40rem) {
+  html body {
+    background: url("../src/Assets/technology/background-technology-tablet.jpg") -1px; } }
+@media (max-width: 40rem) {
+  html body .container {
+    padding: 0; }
+  html body header {
+    padding: 4% 4% 0; }
+  html body aside {
+    display: initial; }
+  html body .asidePortrait {
+    display: none; } }
+@media (min-width: 40rem) {
+  html body {
+    background: url("../src/Assets/technology/background-technology-desktop.jpg"); }
+  html body .asideLandscape {
+    display: none; }
+  html body .asidePortrait {
+    display: initial; }
+  html body .top-nav {
+    background: #1f232c; }
+  html body main {
+    grid-template-columns: initial;
+    align-content: initial; }
+    html body main .subHeading4 {
+      text-align: left;
+      padding-left: 3.5%;
+      font-size: 1.2222rem;
+      align-self: center;
+      margin: 1rem 0; }
+    html body main .subHeading5 {
+      font-size: 1rem; }
+    html body main .techSection {
+      display: flex; }
+    html body main .techBox {
+      grid-template-columns: 2fr 1fr;
+      grid-template-rows: initial; }
+      html body main .techBox .mainPageArticle {
+        border-top: unset;
+        order: 1;
+        flex-direction: row; }
+        html body main .techBox .mainPageArticle p {
+          padding-right: 0; }
+    html body main aside {
+      align-self: auto;
+      order: 2;
+      margin-bottom: -4%; }
+    html body main .techNav {
+      align-self: center;
+      padding-left: 7%;
+      justify-content: left; }
+      html body main .techNav li {
+        margin: 0.8rem 0; }
+      html body main .techNav a {
+        text-align: center; }
+    html body main .techInfo {
+      padding-left: 7%;
+      display: grid;
+      grid-template-columns: 1fr 1fr; } }
+
+.subHeading4 {
+  margin: 1.6rem 0;
+  color: #FFFFFF;
+  font-size: clamp(1.2rem, 4.5vw, 1.5556rem);
+  font-family: barlow;
+  text-align: center;
+  letter-spacing: .2639rem;
+  text-transform: uppercase; }
+  .subHeading4 span {
+    color: #464950; }
+
+main .mainPageArticle h1 {
+  font-size: clamp(2rem, 5vw, 4rem);
+  margin-top: 0.8rem; }
+main .mainPageArticle p {
+  padding: 0;
+  padding-bottom: 1.5rem;
+  margin: 0.8rem 7% 0; }
+main .mainPageArticle .techInfo {
+  order: 4;
+  margin-bottom: 0.6rem; }
+  main .mainPageArticle .techInfo p {
+    border-bottom: none;
+    padding-bottom: 0;
+    font-size: .7778rem;
+    font-family: Barlow;
+    letter-spacing: 2.35px;
+    margin: 0.6rem 0 0.2rem;
+    padding-left: 0; }
+  main .mainPageArticle .techInfo h6 {
+    font-size: 1.5556rem;
+    margin: 0;
+    color: #FFFFFF; }
+
+aside {
+  height: initial;
+  width: initial;
+  position: initial;
+  margin: initial;
+  align-self: initial;
+  padding-top: 1rem; }
+
+.techBox {
+  display: grid;
+  grid-template-rows: 2fr 3fr;
+  display: none; }
+
+.techNav {
+  padding: 0;
+  margin: 2rem 0 0; }
+  .techNav li {
+    display: inline-block;
+    margin: .2778rem;
+    margin-right: 0.8rem; }
+  .techNav a {
+    display: block;
+    height: 2.5222rem;
+    width: 2.5222rem;
+    background-color: #0B0D17;
+    list-style: none;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: .8889rem;
+    border: 1px solid #484b52;
+    border-radius: 50%;
+    line-height: 2.5222rem; }
+  .techNav hr {
+    height: 3px;
+    background: rgba(240, 233, 233, 0);
+    width: 75%;
+    border: 0; }
+  .techNav .techNavActive {
+    color: #FFFFFF;
+    background: white;
+    color: black;
+    border: 1px solid white; }
+
+/*# sourceMappingURL=technology.css.map */

@@ -1,0 +1,149 @@
+   @media (max-width: $width-md) {
+      html{
+         font-size: 85%;
+
+         body{
+            background: url('../src/Assets/home/background-home-mobile.jpg');
+           
+         }
+      } 
+      header{
+            img{
+                height:1.9444rem;
+                width: 1.9444rem;
+
+             }
+             .hamburger{
+                height: 1.9444rem;
+             }
+            .hamburger img{
+                height: 1.3889rem;
+                width: 1.9444rem;
+             }  
+       }
+      main .mainPageArticle{
+       
+         h5{
+            margin: 1.4rem 0;
+            letter-spacing: .1rem;
+
+          }
+       }
+       aside{
+         height:25vh;
+         width: 25vh;
+         align-self: end;
+       }
+  }
+
+@media (min-width: $width-md) and (max-width: $width-lg) {
+   body{
+      background: url('../src/Assets/home/background-home-tablet.jpg') -1px;
+   }
+   .mainPageArticle h5 {
+      margin-top: 1.1rem;
+      margin-bottom: 1.5rem;
+   }
+      aside {
+         height: 29vh;
+         width: 29vh;
+      }
+
+}
+@media (min-width: $width-md){
+   nav{
+      display: grid;
+      grid-template-columns: 1fr 6fr;
+      margin-right: -4%;
+   }
+          
+   .top-nav{
+      position: initial;
+      display: flex;
+      justify-content: space-around;
+      width: auto;
+      background: #141622;
+      
+      li:first-child, .gradient-box{
+         display: none;
+      }
+      li{
+         display: inline-block;
+         
+        }
+      li:not(:first-child){
+         height: 100%;
+         margin-bottom: 0;
+         align-self: center;
+         display: flex;
+         justify-content: center;
+         flex-direction: column; 
+      }
+     .active {
+         background: none;
+         border-bottom: .1667rem solid white;
+         border-right: none;  
+      }
+      li:not(.active){
+         border-bottom: 3px solid rgba(255, 0, 0, 0);
+      }      
+   }
+   .hamburger{
+      display: none;
+   }
+
+}
+@media (min-width: $width-lg) {
+   body {
+      background-image: url('../src/Assets/home/background-home-desktop.jpg')   ;
+      main{
+         grid-template-columns: 2fr 1fr;
+         align-content: center;
+
+         aside{
+            align-self: end;
+         }
+      }
+     
+   }
+   nav {
+      display: grid;
+      grid-template-columns: 1fr 3fr 6fr;
+      height: 3.6111rem;
+      margin-right: -2%;
+      
+      img{
+         align-self: center;
+      }
+      .line{
+         display: initial;
+         align-self: center;
+         border: 1px solid #d8d7d754;;
+         position: relative;
+         left: -0.8889rem;
+         z-index: 20;
+         width: 112%;
+      }
+      .top-nav{
+         background: linear-gradient(90deg, rgb(32, 32, 39) 10%, #496692 40%, #112445 70%);
+         }
+      
+   }
+   .container{
+      padding: 2%;
+   }
+   main .mainPageArticle{ 
+      text-align: left;
+      h5{
+         margin-top: 1rem;
+         margin-bottom: 1.5rem;
+         padding-left: 7%;
+      }
+      h1{
+         padding-left: 7%;
+      }
+      p{
+         padding-right: 33%;
+      }
+   }   
+}

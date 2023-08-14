@@ -1,0 +1,43 @@
+.top-nav li:not(:first-child):hover,
+.top-nav li:not(:first-child):active{
+    @media (max-width: $width-md){
+            &{
+                border-right: 4px solid grey;
+            }
+       }
+    @media (min-width: $width-md) {
+            &{
+                border-bottom: 3px solid rgba(255, 255, 255, 0.39);
+                margin-bottom: 0px;
+             }
+        }
+}
+
+aside:hover{
+    .explore-hover{
+        display: inherit;
+        background: #343030eb;
+    }
+}
+
+//destination
+.destinationNav li:hover{
+    hr{
+        background-color: $grey-color ;
+    }
+}
+//crew
+.crewNav li:hover {
+    a{
+        background-color: lighten($color: $grey-color, $amount: .5);
+    }
+}
+
+//technology
+.techNav  {
+    a:hover{
+        border: 1px solid #ffffffbd;
+        
+
+    }
+}

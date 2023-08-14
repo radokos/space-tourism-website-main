@@ -1,0 +1,102 @@
+@import 'variables';
+html body {
+    @media (max-width: $width-md){
+      & {  background: url('../src/Assets/crew/background-crew-mobile.jpg');
+       }
+    }
+    @media  (min-width: 22.25rem) and (max-width: 40rem) {
+      &{  background: url('../src/Assets/crew/background-crew-tablet.jpg') -1px;
+       }
+    }
+    @media (min-width: $width-lg) {
+      &{  background: url('../src/Assets/crew/background-crew-desktop.jpg');
+       }
+       .top-nav{
+        background: #1f232c;
+       }
+      main {
+        grid-template-columns: initial;
+        align-content: initial;
+        .subHeading4{
+          text-align: left;
+          padding-left: 3.5%;
+          font-size: 1.2222rem;
+          align-self: center;
+        }
+        .crewSection{
+          display: flex;
+        }
+        .crewBox{
+           grid-template-columns: 1fr 1fr;
+           grid-template-rows: initial;   
+           .mainPageArticle{
+             border-top: unset;
+           }
+        }
+        aside{
+          align-self: auto;
+          order: 2;
+          margin-bottom: -4.3%;
+        }
+        .crewNav{
+          order: 4;
+          padding-left: 7%;
+          justify-content: left;
+        }
+      }
+    }
+}
+.subHeading4{
+    margin: 1.3rem 0;
+    color: $h-color;
+    font-size: $heading5;
+    font-family: barlow;
+    text-align: center;
+    letter-spacing: .2639rem;
+    text-transform: uppercase;
+    span {
+      color: $grey-color;
+    }
+}
+.subHeading5{
+ color: lighten($color: $grey-color, $amount: 10); 
+
+}
+main .mainPageArticle{
+  border-top: 1px solid $grey-color;
+  h1{
+    font-size: clamp(1.3rem, 4vw, 8.85rem);
+  }
+
+}
+aside {
+  height: initial;
+  width: initial;
+  position: initial;
+  margin:initial;
+  align-self: initial;
+}
+.crewBox{
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  display:none;
+}
+.crewNav {
+      display: flex;
+      justify-content: center;
+      padding: 0;
+      margin-bottom: 0;
+    a{
+      display: block;
+      list-style: none;
+      border-radius: 50%;
+      width: .5556rem;
+      height: .5556rem;
+      background: grey;
+      margin-right: .5rem;
+   }
+     .crewNavActive {
+       background: white;
+     }
+ }
+

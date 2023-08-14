@@ -1,0 +1,167 @@
+/* 
+colors 
+*/
+/*
+width   
+*/
+/* 
+typography
+*/
+@font-face {
+  font-family: "Barlow";
+  src: url("../src/Assets/Fonts/BarlowCondensed-Regular.ttf"); }
+@font-face {
+  font-family: "Bellefair";
+  src: url("../src/Assets/Fonts/Bellefair-Regular.ttf"); }
+/**
+ * GENERAL
+ */
+html {
+  box-sizing: border-box;
+  font-size: 100%; }
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  font-kerning: auto; }
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle; }
+
+.animationClass {
+  animation-duration: 1s;
+  animation-name: slidein; }
+
+@keyframes slidein {
+  from {
+    opacity: 0;
+    transform: scale(0.75); }
+  to {
+    opacity: 100;
+    transform: scale(1); } }
+@media (max-width: 22.25rem) {
+  html body {
+    background: url("../src/Assets/destination/background-destination-mobile.jpg"); } }
+@media (min-width: 22.25rem) and (max-width: 40rem) {
+  html body {
+    background: url("../src/Assets/destination/background-destination-tablet.jpg") -1px; } }
+@media (min-width: 40rem) {
+  html body {
+    background: url("../src/Assets/destination/background-destination-desktop.jpg"); }
+  html body .top-nav {
+    background: #1f232c; }
+  html body main {
+    grid-template-columns: initial;
+    align-content: initial; }
+    html body main .subHeading4 {
+      text-align: left;
+      padding-left: 3.5%;
+      font-size: 1.2222rem;
+      align-self: center;
+      margin: 1rem 0; }
+    html body main .destinationSection {
+      display: flex; }
+    html body main .destinationBox {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: initial; }
+      html body main .destinationBox .mainPageArticle {
+        border-top: unset;
+        order: 2; }
+        html body main .destinationBox .mainPageArticle p {
+          padding-right: 0;
+          order: 3; }
+        html body main .destinationBox .mainPageArticle h1 {
+          order: 2; }
+    html body main aside {
+      align-self: auto;
+      order: 1;
+      margin-bottom: -4%; }
+    html body main .destinationNav {
+      order: 1;
+      padding-left: 7%;
+      justify-content: left; }
+    html body main .destinationInfo {
+      padding-left: 7%;
+      display: grid;
+      grid-template-columns: 1fr 1fr; } }
+
+.subHeading4 {
+  margin: 1.6rem 0;
+  color: #FFFFFF;
+  font-size: clamp(1.2rem, 4.5vw, 1.5556rem);
+  font-family: barlow;
+  text-align: center;
+  letter-spacing: .2639rem;
+  text-transform: uppercase; }
+  .subHeading4 span {
+    color: #464950; }
+
+.subHeading5 {
+  color: #5e626b; }
+
+main .mainPageArticle h1 {
+  font-size: clamp(4rem, 9vw, 5.65rem);
+  margin-top: 0.8rem; }
+main .mainPageArticle p {
+  border-bottom: 1px solid #464950;
+  padding: 0;
+  padding-bottom: 1.5rem;
+  margin: 0.8rem 7% 0; }
+main .mainPageArticle .destinationInfo {
+  order: 4;
+  margin-bottom: 0.6rem; }
+  main .mainPageArticle .destinationInfo p {
+    border-bottom: none;
+    padding-bottom: 0;
+    font-size: .7778rem;
+    font-family: Barlow;
+    letter-spacing: 2.35px;
+    margin: 0.6rem 0 0.2rem;
+    padding-left: 0; }
+  main .mainPageArticle .destinationInfo h6 {
+    font-size: 1.5556rem;
+    margin: 0;
+    color: #FFFFFF; }
+
+aside {
+  height: initial;
+  width: initial;
+  position: initial;
+  margin: initial;
+  align-self: initial;
+  padding-top: 1rem; }
+
+.destinationBox {
+  display: grid;
+  grid-template-rows: 2fr 3fr;
+  display: none; }
+
+.destinationNav {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin-bottom: 0; }
+  .destinationNav a {
+    display: block;
+    list-style: none;
+    margin-right: .5rem;
+    text-decoration: none;
+    color: #D0D6F9;
+    text-transform: uppercase;
+    font-size: .8889rem;
+    letter-spacing: .15rem; }
+  .destinationNav hr {
+    height: 3px;
+    background: rgba(240, 233, 233, 0);
+    width: 75%;
+    border: 0; }
+  .destinationNav .destinationNavActive {
+    color: #FFFFFF; }
+    .destinationNav .destinationNavActive hr {
+      margin-bottom: 0;
+      background: white; }
+
+/*# sourceMappingURL=destination.css.map */

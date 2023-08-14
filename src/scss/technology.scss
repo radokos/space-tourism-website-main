@@ -1,0 +1,210 @@
+@import 'variables';
+
+html body {
+    @media (max-width: $width-md) {
+        & {
+            background: url('../src/Assets/technology/background-technology-mobile.jpg');
+        }
+    }
+
+    @media (min-width: 22.25rem) and (max-width: 40rem) {
+        & {
+            background: url('../src/Assets/technology/background-technology-tablet.jpg') -1px;
+        }
+    }
+    @media (max-width: $width-lg ){
+        .container {
+            padding: 0;
+        }
+        header {
+            padding: 4% 4% 0;
+        }
+        aside {
+          display: initial;
+          }
+        .asidePortrait{
+            display: none;
+        }
+        
+      }
+    @media (min-width: $width-lg) {
+        & {
+            background: url('../src/Assets/technology/background-technology-desktop.jpg');
+        }
+        .asideLandscape{
+            display: none;
+        }
+        .asidePortrait{
+            display: initial;
+        }
+        .top-nav {
+            background: #1f232c;
+        }
+
+        main {
+            grid-template-columns: initial;
+            align-content: initial;
+
+            .subHeading4 {
+                text-align: left;
+                padding-left: 3.5%;
+                font-size: 1.2222rem;
+                align-self: center;
+                margin: 1rem 0;
+            }
+            .subHeading5{
+                font-size: 1rem;
+            }
+
+            .techSection {
+                display: flex;
+            }
+
+            .techBox {
+                grid-template-columns: 2fr 1fr;
+                grid-template-rows: initial;
+
+                .mainPageArticle {
+                    border-top: unset;
+                    order: 1;
+                    flex-direction: row;
+                    p {
+                        padding-right: 0;
+                        
+                    }
+
+                    
+                }
+            }
+
+            aside {
+                align-self: auto;
+                order: 2;
+                margin-bottom: -4%;
+            }
+
+            .techNav {
+                align-self: center;
+                padding-left: 7%;
+                justify-content: left;
+                li{
+                    margin: 0.8rem 0;
+                }
+                a{
+                    text-align: center;
+                }
+            }
+
+            .techInfo {
+                padding-left: 7%;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+            }
+
+        }
+    }
+}
+
+.subHeading4 {
+    margin: 1.6rem 0;
+    color: $h-color;
+    font-size: $heading5;
+    font-family: barlow;
+    text-align: center;
+    letter-spacing: .2639rem;
+    text-transform: uppercase;
+
+    span {
+        color: $grey-color;
+    }
+}
+
+main .mainPageArticle {
+
+    h1 {
+        font-size: clamp(2rem, 5vw, 4rem);
+        margin-top: 0.8rem;
+    }
+
+    p {
+       
+        padding: 0;
+        padding-bottom: 1.5rem;
+        margin: 0.8rem 7% 0;
+    }
+
+    .techInfo {
+        order: 4;
+        margin-bottom: 0.6rem;
+
+        p {
+            border-bottom: none;
+            padding-bottom: 0;
+            font-size: .7778rem;
+            font-family: Barlow;
+            letter-spacing: 2.35px;
+            margin: 0.6rem 0 0.2rem;
+            padding-left: 0;
+        }
+
+        h6 {
+            font-size: 1.5556rem;
+            margin: 0;
+            color: $h-color;
+        }
+    }
+
+}
+
+aside {
+    height: initial;
+    width: initial;
+    position: initial;
+    margin: initial;
+    align-self: initial;
+    padding-top: 1rem;
+}
+
+.techBox {
+    display: grid;
+    grid-template-rows: 2fr 3fr;
+    display: none;
+}
+
+.techNav {
+    padding: 0;
+    margin: 2rem 0 0;
+    li{
+        display: inline-block;
+        margin: .2778rem;
+        margin-right: 0.8rem;
+    }
+    a {
+        display: block;
+        height: 2.5222rem;
+        width: 2.5222rem;
+        background-color: $background-color;
+        list-style: none;
+        text-decoration: none;
+        color: $h-color;
+        font-size: .8889rem;
+        border: 1px solid  lighten($color: $grey-color, $amount: .9);
+        border-radius: 50%;
+        line-height: 2.5222rem;   
+    }
+
+    hr {
+        height: 3px;
+        background: rgba(240, 233, 233, 0);
+        width: 75%;
+        border: 0;
+    }
+
+    .techNavActive {
+        color: $h-color;
+        background: white;
+        color: black;
+        border: 1px solid white;
+    }
+}
+
