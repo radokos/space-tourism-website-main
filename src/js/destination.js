@@ -1,4 +1,4 @@
-import './navigation.js'          //localhost 
+import './navigation.js'        
 
 const response = await fetch('../data.json');
 let dataJson = await response.json();
