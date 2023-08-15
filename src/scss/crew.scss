@@ -1,15 +1,15 @@
 @import 'variables';
 html body {
     @media (max-width: $width-md){
-      & {  background: url('../src/Assets/crew/background-crew-mobile.jpg');
+      & {  background: url('../src/assets/crew/background-crew-mobile.jpg');
        }
     }
     @media  (min-width: 22.25rem) and (max-width: 40rem) {
-      &{  background: url('../src/Assets/crew/background-crew-tablet.jpg') -1px;
+      &{  background: url('../src/assets/crew/background-crew-tablet.jpg') -1px;
        }
     }
     @media (min-width: $width-lg) {
-      &{  background: url('../src/Assets/crew/background-crew-desktop.jpg');
+      &{  background: url('../src/assets/crew/background-crew-desktop.jpg');
        }
        .top-nav{
         background: #1f232c;

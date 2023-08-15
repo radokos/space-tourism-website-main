@@ -9,10 +9,10 @@ typography
 */
 @font-face {
   font-family: "Barlow";
-  src: url("../src/Assets/Fonts/BarlowCondensed-Regular.ttf"); }
+  src: url("../src/assets/Fonts/BarlowCondensed-Regular.ttf"); }
 @font-face {
   font-family: "Bellefair";
-  src: url("../src/Assets/Fonts/Bellefair-Regular.ttf"); }
+  src: url("../src/assets/Fonts/Bellefair-Regular.ttf"); }
 /**
  * GENERAL
  */
@@ -209,7 +209,7 @@ aside {
   html {
     font-size: 85%; }
     html body {
-      background: url("../src/Assets/home/background-home-mobile.jpg"); }
+      background: url("../src/assets/home/background-home-mobile.jpg"); }
 
   header img {
     height: 1.9444rem;
@@ -230,7 +230,7 @@ aside {
     align-self: end; } }
 @media (min-width: 22.25rem) and (max-width: 40rem) {
   body {
-    background: url("../src/Assets/home/background-home-tablet.jpg") -1px; }
+    background: url("../src/assets/home/background-home-tablet.jpg") -1px; }
 
   .mainPageArticle h5 {
     margin-top: 1.1rem;
@@ -273,7 +273,7 @@ aside {
     display: none; } }
 @media (min-width: 40rem) {
   body {
-    background-image: url("../src/Assets/home/background-home-desktop.jpg"); }
+    background-image: url("../src/assets/home/background-home-desktop.jpg"); }
     body main {
       grid-template-columns: 2fr 1fr;
       align-content: center; }
