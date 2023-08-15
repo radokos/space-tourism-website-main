@@ -1,8 +1,9 @@
-import './navigation.js'          //localhost 
+let dataJson
 
-const response = await fetch('../data.json');
-let dataJson = await response.json();
-   
+fetch('../data.json')
+    .then(res => res.json())
+    .then(function data(out) {
+        dataJson = out
 
     // creating page html elements
 dataJson.technology.forEach(function (tech) {
@@ -85,6 +86,6 @@ dataJson.technology.forEach(function (tech) {
     });      
 }) 
 document.body.querySelector('.techBox').style.display="grid"
-
+})
 
     

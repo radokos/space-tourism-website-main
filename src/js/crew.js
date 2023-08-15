@@ -1,8 +1,3 @@
-  
-/*
-const response = await fetch('../data.json');
-let dataJson = await response.json();
-*/
 let dataJson                                      
   
 fetch('../data.json')

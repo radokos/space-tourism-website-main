@@ -1,8 +1,9 @@
-import './navigation.js'        
+let dataJson
 
-const response = await fetch('../data.json');
-let dataJson = await response.json();
-   
+fetch('../data.json')
+    .then(res => res.json())
+    .then(function data(out) {
+        dataJson = out
 
     // creating page html elements
 dataJson.destinations.forEach(function (destination) {
@@ -82,7 +83,7 @@ dataJson.destinations.forEach(function (destination) {
     });      
 }) 
 document.body.querySelector('.destinationBox').style.display="grid"
-
+})
   
       
     
