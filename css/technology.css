@@ -9,10 +9,10 @@ typography
 */
 @font-face {
   font-family: "Barlow";
-  src: url("../src/Assets/Fonts/BarlowCondensed-Regular.ttf"); }
+  src: url("../src/assets/Fonts/BarlowCondensed-Regular.ttf"); }
 @font-face {
   font-family: "Bellefair";
-  src: url("../src/Assets/Fonts/Bellefair-Regular.ttf"); }
+  src: url("../src/assets/Fonts/Bellefair-Regular.ttf"); }
 /**
  * GENERAL
  */
@@ -44,10 +44,10 @@ img {
     transform: scale(1); } }
 @media (max-width: 22.25rem) {
   html body {
-    background: url("../src/Assets/technology/background-technology-mobile.jpg"); } }
+    background: url("../src/assets/technology/background-technology-mobile.jpg"); } }
 @media (min-width: 22.25rem) and (max-width: 40rem) {
   html body {
-    background: url("../src/Assets/technology/background-technology-tablet.jpg") -1px; } }
+    background: url("../src/assets/technology/background-technology-tablet.jpg") -1px; } }
 @media (max-width: 40rem) {
   html body .container {
     padding: 0; }
@@ -59,7 +59,7 @@ img {
     display: none; } }
 @media (min-width: 40rem) {
   html body {
-    background: url("../src/Assets/technology/background-technology-desktop.jpg"); }
+    background: url("../src/assets/technology/background-technology-desktop.jpg"); }
   html body .asideLandscape {
     display: none; }
   html body .asidePortrait {

@@ -3,7 +3,7 @@
          font-size: 85%;
 
          body{
-            background: url('../src/Assets/home/background-home-mobile.jpg');
+            background: url('../src/assets/home/background-home-mobile.jpg');
            
          }
       } 
@@ -38,7 +38,7 @@
 
 @media (min-width: $width-md) and (max-width: $width-lg) {
    body{
-      background: url('../src/Assets/home/background-home-tablet.jpg') -1px;
+      background: url('../src/assets/home/background-home-tablet.jpg') -1px;
    }
    .mainPageArticle h5 {
       margin-top: 1.1rem;
@@ -95,7 +95,7 @@
 }
 @media (min-width: $width-lg) {
    body {
-      background-image: url('../src/Assets/home/background-home-desktop.jpg')   ;
+      background-image: url('../src/assets/home/background-home-desktop.jpg')   ;
       main{
          grid-template-columns: 2fr 1fr;
          align-content: center;
